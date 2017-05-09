@@ -1,0 +1,17 @@
+{
+  "name": "personal_web_app",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Velizar Ivanov"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/no0n3/personal_web_app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
