@@ -196,8 +196,7 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
         </div>
     </div>
 
-    <?php for($i = 0; $i < 1; $i++) : ?>
-    <div class="dialog <?= $i === 0 ? ('skills-dialog') : ('projects-dialog') ?> v">
+    <div class="dialog skills-dialog v">
             <div class="dialog-header">
                 <div class="dialog-b-c">
                     <a href="javascript:void(0)" class="vi-d-size"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
@@ -212,7 +211,7 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
                     </h1>
                     <div style="width: 100%; position: relative; ">
                   <?php
-                  $sc = array_chunk($skills, round(count($skills) / 2)/*count($skills) / 2*/);
+                  $sc = array_chunk($skills, round(count($skills) / 2));
                   ?>
                     <?php foreach ($sc as $sc_i) : ?>
                         <div class="dialog-skill-col">
@@ -234,7 +233,6 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
                 </div>
             </div>
         </div>
-    <?php endfor; ?>
 
     <div class="dialog projects-dialog v">
         <div class="dialog-header">
