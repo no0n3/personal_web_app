@@ -65,10 +65,7 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
         <div class="app-load-c1">
         </div>
     </div>
-    <div id="app" style="position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);">
+    <div id="app">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -90,29 +87,18 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
     </div>
   </div>
 </nav>
-
-        <div class="side-bar" style="display: none;">
-            <div class="social-bar">
-                <a href="#" style="display: block; font-size: 30px;text-shadow: rgb(0, 0, 0) 0px 0px 3px; background-color: gray;   padding: 0px 8px;
-    border-radius: 50px;"><i class="fa fa-github" aria-hidden="true" style="color: #FFF;"></i></a>
-                <a href="#" style="display: block; font-size: 30px;text-shadow: rgb(0, 0, 0) 0px 0px 3px; background-color: gray;   padding: 0px 8px;
-    border-radius: 50px;"><i class="fa fa-linkedin" aria-hidden="true" style="color: #FFF;"></i></a>
-                <a href="#" id="fb-btn" style="display: block; font-size: 30px;text-shadow: rgb(0, 0, 0) 0px 0px 3px; background-color: gray;   padding: 0px 8px;
-    border-radius: 50px;"><i class="fa fa-facebook" aria-hidden="true" style="color: #FFF;"></i></a>
-            </div>
-        </div>
-
 <div>
 
 <h1 id="dev-text"><span id="dev-text-c"></span></h1>
-    <h3 style="text-align: center;color: #fff;">
-  <span style="text-align: left;display: inline-block;">
-<span style="color:#E6D88A; text-shadow: 0px 0px 3px #000000;" class="vi-code">while</span> (<span class="vi-code vi-var">me</span><span class="vi-code">.</span><span class="vi-code">bored()) {</span><br>
+    <h3 class="wellcome-about">
+  <span class="wellcome-about-cont1">
+<span class="vi-while vi-code">while</span> (<span class="vi-code vi-var">me</span><span class="vi-code">.</span><span class="vi-code">bored()) {</span><br>
   &nbsp;&nbsp;&nbsp;&nbsp;<span class="vi-comment vi-code">// me.play(YuGiOh); // shadow realm and stuff</span><br/>
   &nbsp;&nbsp;&nbsp;&nbsp;<span class="vi-comment vi-code">// me.liveDangerously();</span><br/>
   &nbsp;&nbsp;&nbsp;&nbsp;<span class="vi-code vi-var">me</span><span class="vi-code">.</span><span class="vi-code">code();</span> <span class="vi-code vi-comment">// lets keep it simple</span><br/>
   <span class="vi-code">}</span><br/>
-  </span></h3>
+  </span>
+    </h3>
 </div>
 
     </div>
@@ -328,7 +314,7 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
         </div>
     </div>
 
-    <div class="dialog fb-dialog v" style="width: 400px;">
+    <div class="dialog fb-dialog v">
         <div class="dialog-header">
             <div class="dialog-b-c">
                 <a href="javascript:void(0)" class="vi-d-size"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
@@ -348,29 +334,29 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
         <div class="alert-cont">
             <div class="alert-cont-right">
                 <div class="vi-hidden vi-a vi-a-success">
-                    <div style="padding: 10px; text-align: center;">
+                    <div class="alert-msg">
                         <span>Your message has been successfully send.</span>
                     </div>
                 </div>
                 <div class="vi-hidden vi-a vi-a-error">
-                    <div style="padding: 10px; text-align: center;">
+                    <div class="alert-msg">
                         <span>There was an error sending you message.</span>
                     </div>
                 </div>
                 <div class="vi-hidden vi-a vi-a-greet">
-                    <div style="padding: 10px; text-align: center;">
+                    <div class="alert-msg">
                         <h3>Hello thereǃ</h3>
                     </div>
                 </div>
             </div>
             <div class="alert-cont-left">
                 <div class="vi-hidden vi-a vi-a-suggest">
-                    <div style="padding: 10px; text-align: center;">
+                    <div class="alert-msg">
                         If you find any issues or think there is room for improvements feel free to contact me. I'm always open to suggestions.
                     </div>
                 </div>
                 <div class="vi-hidden vi-a vi-a-skill">
-                    <div style="padding: 10px; text-align: center;">
+                    <div class="alert-msg">
                         If you know an interesting technology that I have not listed feel free to share it with me.
                     </div>
                 </div>
@@ -378,7 +364,7 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
         </div>
     </div>
 
-    <div style="position: fixed; bottom: 0px; left: 0px; right: 0px; height: 35px; background-color: #101010;">
+    <div class="footer-cont">
         <a href="https://twitter.com/search/?q=%23codeception" class="vi-footer-start">#codeception</a>
         <a href="<?= $githubUrl ?>" target="_blank" class="vi-social-link"><i aria-hidden="true" class="fa fa-github"></i></a>
         <a href="<?= $linkedinUrl ?>" target="_blank" class="vi-social-link"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
