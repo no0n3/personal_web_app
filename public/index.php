@@ -57,12 +57,7 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
     <meta name="twitter:image" content="<?= $img ?>">
     <link rel="image_src" href="<?= $img ?>">
 
-    <link href="css/app.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/viewer.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
     <link rel="shortcut icon" href="images/sir.ico">
 </head>
 <body>
@@ -436,11 +431,7 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
         <!--<a href="" target="_blank" class="vi-social-link"><i aria-hidden="true" class="fa fa-stack-overflow"></i></a>-->
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script src="js/viewer.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
 <script>
 $(function() {
     var SUGGEST_ALERT_OPEN_DELAY = 8000;
