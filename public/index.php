@@ -71,7 +71,6 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
     background: rgba(0,0,0,0.3);">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -81,7 +80,6 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
       </button>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li><a href="#about" id="about-btn" class="vi-nav-btn"><i class="fa fa-user" aria-hidden="true"></i> About Me<span class="sr-only">(current)</span></a></li>
@@ -89,8 +87,8 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
             <li><a href="#projects" id="proj-btn" class="vi-nav-btn"><i class="fa fa-suitcase" aria-hidden="true"></i> Projects</a></li>
             <li><a href="#contact" id="contact-btn" class="vi-nav-btn"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
         </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 
         <div class="side-bar" style="display: none;">
@@ -120,7 +118,6 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
 
-          <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -320,7 +317,6 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
                 </div>
                 <form>
                 <div style="position: relative;display: inline-block; width: 100%;">
-                    <!--<div class="" style="/*! padding: 5px; */padding-right: 15px; padding-bottom: 10px; float:left; width: 50%; position: relative; ">-->
                     <div style="margin-bottom: 10px;">
                         <div class="vi-contact-inp-g" style="position: relative; ">
                         <input id="vi-contact-name" class="vi-contact-inp" name="email" placeholder="Your name" type="text">
@@ -328,8 +324,6 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
                         </div>
                         <div><span id="vi-contact-name-error" class="error-field"></span></div>
                     </div>
-                    <!--</div>-->
-                    <!--<div style="/*! padding: 5px; */padding-left: 15px; padding-bottom: 10px; float:left; width: 50%; position: relative; ">-->
                     <div style="margin-bottom: 10px;">
                         <div class="vi-contact-inp-g" style="position: relative;">
                         <input id="vi-contact-email" class="vi-contact-inp" name="email" placeholder="Your email" type="text">
@@ -337,7 +331,6 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
                         </div>
                         <div><span id="vi-contact-email-error" class="error-field"></span></div>
                     </div>
-                    <!--</div>-->
                     <span style="clear: both;"></span>
                 </div>
                 <br/>
@@ -428,7 +421,6 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
         <a href="https://twitter.com/search/?q=%23codeception" class="vi-footer-start">#codeception</a>
         <a href="<?= $githubUrl ?>" target="_blank" class="vi-social-link"><i aria-hidden="true" class="fa fa-github"></i></a>
         <a href="<?= $linkedinUrl ?>" target="_blank" class="vi-social-link"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
-        <!--<a href="" target="_blank" class="vi-social-link"><i aria-hidden="true" class="fa fa-stack-overflow"></i></a>-->
     </div>
 
     <script src="js/all.js"></script>
