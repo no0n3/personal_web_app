@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/no0n3/personal_web_app/issues"
   },
-  "homepage": "https://github.com/no0n3/personal_web_app#readme"
+  "homepage": "https://github.com/no0n3/personal_web_app#readme",
+  "dependencies": {
+    "viewerjs": "^0.7.0"
+  }
 }
