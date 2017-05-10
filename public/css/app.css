@@ -1,10 +1,6 @@
 body {
-/*background-color: #000 !important;*/
-    /*background: url(https://cdn-images-1.medium.com/max/1358/1*e0eQH_9X8jN7yC6AEqlvdQ.jpeg) no-repeat center center fixed;*/
-    /*background: url(https://4.bp.blogspot.com/-pigPfRWS3Sw/VWX-feGd7II/AAAAAAABjLE/K3JemRkjclI/s0/Coding_with_Style_wallpaper.jpg) no-repeat center center fixed;*/
     background: url(/images/bg-1.jpg) no-repeat center center fixed;
     background-size: cover;
-    /*transition: all 1s;*/
 }
 
 .error-field {
@@ -18,7 +14,6 @@ body {
 
 .book-slider {
     position: relative;
-    /*height: 300px;*/
 }
 
 .book-img {
@@ -28,7 +23,6 @@ body {
 #vi-contact-send-btn {
     width: 100%;
     padding: 5px;
-    /*background: rgba(179, 120, 45, 0.8) none repeat scroll 0% 0%;*/
     border: 1px solid #000;
     font-weight: bold;
     transition: background-color .5s;
@@ -37,7 +31,6 @@ body {
 #vi-contact-send-btn:hover {
     background-color: #20895e;
     color: #fff;
-    /*background: rgba(179, 120, 45, 0.8) none repeat scroll 0% 0%;*/
 }
 
 .vi-contact-i {
@@ -69,10 +62,6 @@ body {
     background-color: #20895e;
     color: #fff;
 }
-
-/*.vi-contact-inp-g input[type='text']:focus  {
-    background-color: blue;
-}*/
 
 .proj-imgx {
     border: 1px solid #000;
@@ -139,10 +128,8 @@ body {
 .vi-social-link {
     font-size: 25px;
     text-shadow: 0px 0px 3px rgb(0, 0, 0);
-    /*background: gray;*/
     padding: 0px 4px;
     border-radius: 50px;
-    /*background: rgba(0,0,0,0.9);*/
     border-radius: 50%;
     vertical-align: middle;
     color: #fff;
@@ -178,58 +165,44 @@ body {
 
 .vi-a-success {
     width: 300px;
-    /*height: 100px;*/
-    
     background: rgba(56, 156, 71, 0.9) none repeat scroll 0% 0%;
     border-radius: 10px;
     color: #fff;
     text-shadow: 0px 0px 3px #000000;
     box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
     font-weight: bold;
-
-    /*opacity: 0;*/
 }
 
 .vi-a-error {
     width: 300px;
-    /*height: 100px;*/
-    
     background: rgba(156, 45, 33, 0.9) none repeat scroll 0% 0%;
     border-radius: 10px;
     color: #fff;
     text-shadow: 0px 0px 3px #000000;
     box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
     font-weight: bold;
-
-    /*opacity: 0;*/
 }
 
 .vi-hidden {
     display: none;
-    /*opacity: 0;*/
 }
 
 .vi-a {
     margin-top: 10px;
-    /*float: right;*/
 }
 
 .vi-a-greet {
     width: 200px;
-    /*height: 100px;*/
     background: rgba(179, 120, 45, 0.8) none repeat scroll 0% 0%;
     border-radius: 10px;
     color: #fff;
     text-shadow: 0px 0px 3px #000000;
     box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
-
     font-weight: bold;
-    /*opacity: 0;*/
 }
 
 .vi-a-suggest {
     width: 345px;
-    /*height: 100px;*/
     background: rgba(179, 120, 45, 0.8) none repeat scroll 0% 0%;
     border-radius: 10px;
     color: #fff;
@@ -240,7 +213,6 @@ body {
 
 .vi-a-skill {
     width: 345px;
-    /*height: 100px;*/
     background: rgba(179, 120, 45, 0.8) none repeat scroll 0% 0%;
     border-radius: 10px;
     color: #fff;
@@ -248,7 +220,6 @@ body {
     box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
     font-weight: bold;
 }
-
 
 .vi-comment {
     color: #C9C8C1;
@@ -260,7 +231,7 @@ body {
 }
 
 .vi-var {
-    
+
 }
 
 #app-load {
@@ -271,7 +242,7 @@ body {
     bottom: 0px;
     background-color: #000;
     z-index: 2000;
-    
+
 }
 
 .side-bar {
@@ -297,13 +268,11 @@ body {
 
 #dev-text-c {
     border-bottom: 0px solid #000;
-    /*margin-bottom: 4px;*/
     transition: all 1s;
 }
 
 .skill-c {
     margin-bottom: 5px;
-    /*border: 1px solid gray;*/
     width: 300px;
     display: inline-block;
     vertical-align: middle;
@@ -323,8 +292,8 @@ body {
 }
 
 .skill:hover {
-  background-color : #DB1D30;
-  cursor: pointer;
+    background-color : #DB1D30;
+    cursor: pointer;
 }
 
 .skill-bg {
@@ -406,7 +375,6 @@ body {
     animation: skill-20 1s ease forwards;
 }
 
-
 .dialog-skill-col {
     float: left;
     width: 50%;
@@ -449,49 +417,39 @@ body {
 }
 
 .dialog-header {
-                /*height: 40px;*/
-                /*display: inline-block;*/
-                /*padding: 10px;*/
-                background-color: #000; width: 100%;
-            }
-            .dialog-header > ul {
-                float: right;
-                margin: 0px;
-                padding: 0px;
-                list-style: none;
-            }
-            .dialog-header ul li {
-                float: right;
-                margin: 0px;
-                padding: 0px;
-                height: 100%;
-            }
-            .dialog-header a {
-                vertical-align: middle;
-                display: inline-block;
-                font-size: 30px;
-                margin: 0px 5px;
-            }
-            .dialog-header .dialog-b-c {
-                float: right;
-            }
-            .dialog {
-                z-index: 1;
-                -webkit-box-shadow: 0px 0px 28px -2px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 28px -2px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 28px -2px rgba(0,0,0,0.75);
-/*                width: 0px;
-                height: 0px;
-                #width: 300px;
-                #height: 300px;*/
-                /*background-color: green;*/
-                position:fixed;
-                /*top:300px;*/
+    background-color: #000; width: 100%;
+}
+.dialog-header > ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.dialog-header ul li {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+.dialog-header a {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 30px;
+    margin: 0px 5px;
+}
+.dialog-header .dialog-b-c {
+    float: right;
+}
+.dialog {
+    z-index: 1;
+    -webkit-box-shadow: 0px 0px 28px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 28px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 28px -2px rgba(0,0,0,0.75);
+    position:fixed;
+    background-color: #fff;
+}
 
-                background-color: #fff;
-            }
-
-            @-webkit-keyframes app-load-anim-x {
+@-webkit-keyframes app-load-anim-x {
     0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:200px; top:0px;}
     50%  {background-color:blue; left:200px; top:200px;}
@@ -517,56 +475,50 @@ box-shadow: 0px 0px 28px -2px rgba(0,0,0,0.75);
     50%  {background-color:blue; left:200px; top:0px;}
     100% {background-color:red; left:0px; top:0px;}
 }
-            .app-load-anim {
-                animation-name: app-load-anim-x;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-            }
-            .app-load-c1 {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                width: 800px;
-                height: 100px;
-                margin-top: -100px;
-                margin-left: -400px;
-                line-height: 100px;
-                text-align: center;
-            }
+.app-load-anim {
+    animation-name: app-load-anim-x;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.app-load-c1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    height: 100px;
+    margin-top: -100px;
+    margin-left: -400px;
+    line-height: 100px;
+    text-align: center;
+}
 
-            .app-load-anim-c {
-                width: 50px;
-                height: 50px;
-                border-radius: 1000px;
-                background-color: red;
-                /*display: inline-block;*/
-                position: relative;
-            }
+.app-load-anim-c {
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    background-color: red;
+    position: relative;
+}
 
-/*            .dialog-1 {
-                background-color: #fff;
-            }*/
+.dialog-2 {
+    background-color: red;
+}
 
-            .dialog-2 {
-                background-color: red;
-            }
+.dialog-wrap {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(100% - 42px);
+    position: relative;
+}
 
-            .dialog-wrap {
-                overflow-x: hidden;
-                overflow-y: auto;
-                /*height: 100%;*/
-                height: calc(100% - 42px);
-                position: relative;
-            }
+.dialog-body-cont {
+    margin: 40px;
+}
 
-            .dialog-body-cont {
-                margin: 40px;
-            }
-
-            .v {
-                visibility: hidden;
-                #opacity
-            }
+.v {
+    visibility: hidden;
+    #opacity
+}
 /* Chrome, Safari, Opera */
 @-webkit-keyframes max-skill {
     to {width: 300px;}
