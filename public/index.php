@@ -429,22 +429,6 @@ $(function() {
     var SUGGEST_ALERT_OPEN_DELAY = 8000;
     var SKILLS_ALERT_OPEN_DELAY = 3000;
 
-//    $('#vi-contact-send-btn').on('click', function(e) {
-//        $.post('/', {
-//            data: {
-//                kk: 'lqlq',
-//            },
-//        }, function(response) {
-//            if (false == response || false == response.success) {
-//                
-//            } else {
-//                
-//            }
-//        });
-//        e.preventDefault();
-//        e.stopPropagation();
-//    });
-
     for (var i = 1; i <= <?= count($projects) ?>; i++) {
         let projImgs = document.getElementById('proj-imgs-' + i);
         var viewer = new Viewer(projImgs, {
@@ -457,16 +441,9 @@ $(function() {
         });
     }
 
-//    $('.slider').slick({
-//        infinite: true,
-//        speed: 300,
-//        slidesToShow: 1,
-//        adaptiveHeight: true
-//    });
-
     var visit = 0;
     if ('undefined' === typeof(Storage)) {
-        
+        // my `1` keyboard key doesn't work :((( and was too lazy to copy exclamation mark symbol
     } else {
         visit = localStorage.getItem('_visit');
 
@@ -668,75 +645,6 @@ $(function() {
         skills[ _skills[i]['percent'] ].push( _skills[i] )
     }
 
-return;
-
-    app.init({
-        showSkills: showSkills,
-        showProjects: showProjects,
-        showContact: showContact,
-    });
-
-    function showSkills(event) {
-        app.dialog.toggle({
-            selector: '.skills-dialog',
-            event: event,
-            showCallback: function() {
-                for (var i in skills) {
-                    $("[data-sp='" + i + "']").each(function() {
-                        $(this).addClass('skill-' + i);
-                    });
-                }
-            },
-            beforeOpen: function() {
-                for (var i in skills) {
-                    $("[data-sp='" + i + "']").each(function() {
-                        $(this).removeClass('skill-' + i);
-                    });
-                }
-            }
-        });
-    }
-    function showProjects(event) {
-        app.dialog.toggle({
-            selector: '.projects-dialog',
-            event: event,
-            showCallback: function() {
-                
-            },
-            beforeOpen: function() {
-                
-            }
-        });
-    }
-    function showContact(event) {
-        app.dialog.toggle({
-            selector: '.contact-dialog',
-            event: event,
-            showCallback: function() {
-                
-            },
-            beforeOpen: function() {
-                
-            }
-        });
-    }
-    $('#skills-btn').on('click', function(e) {
-        showSkills(e);
-    });
-    $('#proj-btn').on('click', function(e) {
-        showProjects(e);
-    });
-    $('#contact-btn').on('click', function(e) {
-        showContact(e);
-    });
-    $('#fb-btn').on('click', function(e) {
-        app.dialog.toggle({
-            selector: '.fb-dialog',
-            event: e,
-            width: 400,
-            height: 200,
-        });
-    });
 });
 </script>
 </body>
