@@ -115,43 +115,6 @@ $skills   = isset($data['skills']) ? $data['skills'] : [];
   </span></h3>
 </div>
 
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-              <p>Some text in the modal.</p>
-
-              <div style="width: 100%; position: relative; ">
-                  <div style="display: inline-block; width: 50%;">
-                  <?php for ($i = 0; $i < 10; $i++) : ?>
-                  <div style="margin-bottom: 5px; ">
-                      <div style="position: relative;">PhP <span style="float: right;">70%</span></div>
-                      <div class="skill skill-70" title="70%"></div>
-                  </div>
-                  <?php endfor; ?>
-                  </div>
-
-                  <div style="float: left; width: 50%;">
-                  <?php for ($i = 0; $i < 10; $i++) : ?>
-                  <div style="margin-bottom: 5px; ">
-                      <div class="skill skill-70" title="70%"></div>
-                  </div>
-                  <?php endfor; ?>
-                  </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-
-        </div>
-    </div>
     </div>
 
     <div class="dialog about-dialog v">
