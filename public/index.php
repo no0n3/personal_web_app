@@ -28,8 +28,8 @@ if (isset($_SERVER['REQUEST_METHOD']) && 'POST' === $_SERVER['REQUEST_METHOD']) 
 $githubUrl = 'https://github.com/no0n3';
 $linkedinUrl = 'https://www.linkedin.com/in/velizar-ivanov-129489a2/';
 
-$title = 'Velizar Ivanov - Web Developer';
-$description = 'Hi! I\'m Velizar and I\'m a Web Developer.';
+$title = 'Velizar Ivanov - Software Developer';
+$description = 'Hi! I\'m Velizar and I\'m a Software Developer.';
 $img = 'http://vivanof.com/images/sir.png';
 
 $data = require_once '../data/data.php';
@@ -112,7 +112,7 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
             <div class="dialog-wrap">
                 <div class="dialog-body-cont">
                     <p>
-                        I'm Velizar, a 26 year old programmer from Sofia, Bulgaria.
+                        I'm Velizar, a 26 year old Software Developer from Sofia, Bulgaria.
                     </p>
                     <div>
                         <div class="about-right-c">
@@ -424,7 +424,7 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                     });
 
                     var txtEle = document.getElementById('dev-text-c');
-                    var str = (0 === visit ? "Hello!" : "Wellcome back!") + " I'm Velizar and I'm a Web Developer.";
+                    var str = (0 === visit ? "Hello!" : "Wellcome back!") + " I'm Velizar and I'm a Software Developer.";
                     var f = function (i) {
                         if (undefined === str[i]) {
                             $('#dev-text-c').css({
