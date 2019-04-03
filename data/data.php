@@ -20,6 +20,42 @@ return [
     ],
     'projects' => [
         [
+            'title' => 'Code Hospitality SPA',
+            'contribution' => ['design', 'solo developer'],
+            'imgs' => [
+                '/images/projects/code/1.png',
+                '/images/projects/code/2.png',
+                '/images/projects/code/3.png',
+            ],
+            'technology' => ['Typescript, Angular5',],
+            // 'note' => 'No found XSS, SQL Injection, Email Injection vulnerabilities',
+            'descr' => 'SPA management panel for Code Hospitality. Used as template project for other company projects.',
+        ],
+        [
+            'title' => 'Hotel Alexa',
+            'contribution' => ['design', 'solo developer'],
+            'imgs' => [
+                '/images/projects/alexa/1.png',
+                '/images/projects/alexa/2.png',
+                '/images/projects/alexa/3.png',
+            ],
+            'technology' => ['JavaScript ES6+, Node.js, Serverless, Angular5, DynamoDB',],
+            // 'note' => 'No found XSS, SQL Injection, Email Injection vulnerabilities',
+            'descr' => '',
+        ],
+        [
+            'title' => 'Twoter',
+            'contribution' => ['design', 'solo developer'],
+            'imgs' => [
+                '/images/projects/twoter/1.png',
+                '/images/projects/twoter/2.png',
+                '/images/projects/twoter/3.png',
+            ],
+            'technology' => ['Typescript, Java8, Angular5, Spring5, Spring Boot, MySQL',],
+            // 'note' => 'No found XSS, SQL Injection, Email Injection vulnerabilities',
+            'descr' => 'Simple Twitter like application for posting updates, commenting, liking and realtime notifications',
+        ],
+        [
             'title' => 'Eveneres',
             'contribution' => ['design', 'solo developer'],
             'imgs' => [
@@ -33,7 +69,7 @@ return [
                 '/images/projects/event/1.jpg',
                 '/images/projects/event/2.jpg',
             ],
-            'technology' => ['custom framework',],
+            'technology' => ['PHP 5.6, custom framework (Yii2 like), MySQL',],
             'note' => 'No found XSS, SQL Injection, Email Injection vulnerabilities',
             'descr' => 'A web application for creating and finding events. With the main functonality of flexible search of events by address, radius of a location or simply by categories or tags.',
         ],
@@ -48,7 +84,7 @@ return [
     //            '/images/projects/0/2.jpg',
             ],
             'contribution' => ['design', 'solo developer'],
-            'technology' => ['custom framework',],
+            'technology' => ['PHP 5.6, MySQL',],
             'note' => 'No found XSS, SQL Injection vulnerabilities',
             'descr' => 'A web application for creating, liking and sharing updates. This application was part of a course assignment.',
         ],

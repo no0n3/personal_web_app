@@ -26,6 +26,7 @@ gulp.task('css', function() {
             'bower_components/font-awesome/css/font-awesome.min.css',
             'bower_components/bootstrap/dist/css/bootstrap.min.css',
             'node_modules/viewerjs/dist/viewer.min.css',
+            'public/viewer.min.css',
             cssDest + 'app.css'
         ])
         .pipe(concat('all.css'))

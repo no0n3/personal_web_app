@@ -56,6 +56,8 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
         <link rel="image_src" href="<?= $img ?>">
 
         <link rel="stylesheet" type="text/css" href="css/all.css" />
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
         <link rel="shortcut icon" href="images/sir.ico">
     </head>
     <body>
@@ -86,7 +88,6 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                 </div>
             </nav>
             <div>
-
                 <h1 id="dev-text"><span id="dev-text-c"></span></h1>
                 <h3 class="wellcome-about">
                     <span class="wellcome-about-cont1">
@@ -98,7 +99,6 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                     </span>
                 </h3>
             </div>
-
         </div>
 
         <div class="dialog about-dialog v">
@@ -112,7 +112,7 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
             <div class="dialog-wrap">
                 <div class="dialog-body-cont">
                     <p>
-                        I'm Velizar, a 23 year old programmer from Sofia, Bulgaria.
+                        I'm Velizar, a 26 year old programmer from Sofia, Bulgaria.
                     </p>
                     <div>
                         <div class="about-right-c">
@@ -188,7 +188,7 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
             <div class="dialog-wrap">
                 <div class="dialog-body-cont">
                     <h1 class="vi-dialog-title"><span class="vi-dialog-title-text">Projects</span></h1>
-                    <h3>Some of my personal projects.</h3>
+                    <h3>Some of my projects.</h3>
                     <div style="width: 100%;">
                         <div id="proj-cont">
                             <?php $i = 0;
@@ -206,34 +206,36 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                                         </div>
                                     </div>
 
-                                    <div class="project-label">
-                                        <b>Contribution:</b> <?= implode(', ', $project['contribution']) ?>
+                                    <div style="margin-top: 5px;">
+                                        <div class="project-label">
+                                            <b>Contribution:</b> <?= implode(', ', $project['contribution']) ?>
+                                        </div>
+                                        <?php if (isset($project['technology'])) : ?>
+                                            <div class="project-label">
+                                                <b>Technology:</b> <?= implode(', ', $project['technology']) ?>
+                                            </div>
+                                        <?php endif; ?>
+                                        <div class="project-label">
+                                            <b>Description:</b> <?= htmlspecialchars($project['descr']) ?>
+                                        </div>
+                                        <?php if (isset($project['note'])) : ?>
+                                            <div class="project-label">
+                                                <b>Note:</b> <?= htmlspecialchars($project['note']) ?>
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if (isset($project['url'])) : ?>
+                                            <div class="project-label">
+                                                <i class="fa fa-link"></i>
+                                                <a href="<?= $project['url'] ?>">preview website</a>
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if (isset($project['code'])) : ?>
+                                            <div class="project-label">
+                                                <i class="fa fa-link"></i>
+                                                <a href="<?= $project['code'] ?>">view source code</a>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
-                                    <?php if (isset($project['technology'])) : ?>
-                                        <div class="project-label">
-                                            <b>Technology:</b> <?= implode(', ', $project['technology']) ?>
-                                        </div>
-                                    <?php endif; ?>
-                                    <div class="project-label">
-                                        <b>Description:</b> <?= htmlspecialchars($project['descr']) ?>
-                                    </div>
-                                    <?php if (isset($project['note'])) : ?>
-                                        <div class="project-label">
-                                            <b>Note:</b> <?= htmlspecialchars($project['note']) ?>
-                                        </div>
-                                    <?php endif; ?>
-                                    <?php if (isset($project['url'])) : ?>
-                                        <div class="project-label">
-                                            <i class="fa fa-link"></i>
-                                            <a href="<?= $project['url'] ?>">preview website</a>
-                                        </div>
-                                    <?php endif; ?>
-                                    <?php if (isset($project['code'])) : ?>
-                                        <div class="project-label">
-                                            <i class="fa fa-link"></i>
-                                            <a href="<?= $project['code'] ?>">view source code</a>
-                                        </div>
-                                    <?php endif; ?>
                                 </div>
                                 <?php $i++;
                             endforeach; ?>
@@ -485,8 +487,8 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                 });
                 var projectDialog = new app.Dialog({
                     selector: '.projects-dialog',
-                    width: 900,
-                    height: 530
+                    width: 1200,
+                    height: 730
                 });
 
                 app.init({
