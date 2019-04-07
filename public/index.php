@@ -58,6 +58,8 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
         <link rel="stylesheet" type="text/css" href="css/all.css" />
         <link rel="stylesheet" type="text/css" href="css/slick.css"/>
         <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
         <link rel="shortcut icon" href="images/sir.ico">
     </head>
     <body>
@@ -91,11 +93,12 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                 <h1 id="dev-text"><span id="dev-text-c"></span></h1>
                 <h3 class="wellcome-about">
                     <span class="wellcome-about-cont1">
-                        <span class="vi-while vi-code">while</span> (<span class="vi-code vi-var">me</span><span class="vi-code">.</span><span class="vi-code">bored()) {</span><br>
+                    <span class="vi-while vi-code">I like to code. Sometimes it even works.</span>
+                        <!-- <span class="vi-while vi-code">while</span> (<span class="vi-code vi-var">me</span><span class="vi-code">.</span><span class="vi-code">bored()) {</span><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="vi-comment vi-code">// me.play(YuGiOh); // shadow realm and stuff</span><br/>
                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="vi-comment vi-code">// me.liveDangerously();</span><br/>
                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="vi-code vi-var">me</span><span class="vi-code">.</span><span class="vi-code">code();</span> <span class="vi-code vi-comment">// lets keep it simple</span><br/>
-                        <span class="vi-code">}</span><br/>
+                        <span class="vi-code">}</span><br/> -->
                     </span>
                 </h3>
             </div>
@@ -216,7 +219,8 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                                             </div>
                                         <?php endif; ?>
                                         <div class="project-label">
-                                            <b>Description:</b> <?= htmlspecialchars($project['descr']) ?>
+                                            <!-- <b>Description:</b> <?= htmlspecialchars($project['descr']) ?> -->
+                                            <b>Description:</b> <?= $project['descr'] ?>
                                         </div>
                                         <?php if (isset($project['note'])) : ?>
                                             <div class="project-label">
@@ -231,8 +235,8 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                                         <?php endif; ?>
                                         <?php if (isset($project['code'])) : ?>
                                             <div class="project-label">
-                                                <i class="fa fa-link"></i>
-                                                <a href="<?= $project['code'] ?>">view source code</a>
+                                                <i class="fas fa-code" style="color: #196eb7;"></i>
+                                                <a href="<?= $project['code'] ?>">View source</a>
                                             </div>
                                         <?php endif; ?>
                                     </div>
@@ -363,9 +367,8 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
         </div>
 
         <div class="footer-cont">
-            <a href="https://twitter.com/search/?q=%23codeception" class="vi-footer-start">#codeception</a>
-            <a href="<?= $githubUrl ?>" target="_blank" class="vi-social-link"><i aria-hidden="true" class="fa fa-github"></i></a>
-            <a href="<?= $linkedinUrl ?>" target="_blank" class="vi-social-link"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+            <a href="<?= $githubUrl ?>" target="_blank" class="vi-social-link"><i class="fab fa-github"></i></a>
+            <a href="<?= $linkedinUrl ?>" target="_blank" class="vi-social-link"><i class="fab fa-linkedin"></i></a>
         </div>
 
         <script src="js/all.js"></script>
@@ -450,11 +453,11 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                     width: 200,
                     height: 100
                 });
-                setTimeout(function () {
-                    suggestAlert.show({
-        //            closeDelay: 5000
-                    });
-                }, SUGGEST_ALERT_OPEN_DELAY);
+        //         setTimeout(function () {
+        //             suggestAlert.show({
+        // //            closeDelay: 5000
+        //             });
+        //         }, SUGGEST_ALERT_OPEN_DELAY);
 
                 var d = new app.Dialog({
                     selector: '.skills-dialog',
@@ -473,7 +476,7 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                 });
                 var contactDialog = new app.Dialog({
                     selector: '.contact-dialog',
-                    height: 450
+                    height: 490
                 });
                 var msgDialog = new app.Dialog({
                     selector: '.msg-dialog',
@@ -510,11 +513,11 @@ $skills = isset($data['skills']) ? $data['skills'] : [];
                             }
                             if (false === skillsOpenedBefore) {
                                 skillsOpenedBefore = true;
-                                setTimeout(function () {
-                                    skillAlert.show({
-                                        closeDelay: 15000
-                                    });
-                                }, SKILLS_ALERT_OPEN_DELAY);
+                                // setTimeout(function () {
+                                //     skillAlert.show({
+                                //         closeDelay: 15000
+                                //     });
+                                // }, SKILLS_ALERT_OPEN_DELAY);
                             }
                         }
                     });
